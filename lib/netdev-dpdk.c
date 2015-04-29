@@ -1887,7 +1887,7 @@ dpdk_init(int argc, char **argv)
         argv += 2;    /* Increment by two to bypass the cuse_dev_name arguments */
         base = 2;
 
-        VLOG_ERR("User-provided cuse_dev_name in use: /dev/%s", cuse_dev_name);
+        VLOG_INFO("User-provided cuse_dev_name in use: /dev/%s", cuse_dev_name);
     } else {
         cuse_dev_name = "vhost-net";
         VLOG_INFO("No cuse_dev_name provided - defaulting to /dev/vhost-net");
